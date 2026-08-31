@@ -198,7 +198,7 @@ function GetBalancingFromPresetID(presetID, success, error) {
             }
         }
     }
-    xhttp.open("GET", currentPreset["Path"], false);
+    xhttp.open("GET", `${currentPreset["Path"]}?v=${Date.now()}`, false);
     xhttp.send();
 }
 
